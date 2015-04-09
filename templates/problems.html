@@ -1,0 +1,291 @@
+{% extends 'base2.html' %}
+
+{% block content %}
+	<h4 class="pink">
+		<i class="icon-hand-right green"></i>
+		<a href="#modal-form" role="button" class="blue" data-toggle="modal"> Add problem </a>
+	</h4>
+	<div class="hr hr-18 dotted hr-double"></div>
+
+	
+	{% if len(problems) != 0%}
+	<div class="row-fluid">
+		<div class="span12">
+			<table id="sample-table-1" class="table table-striped table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Time limit</th>
+						<th class="hidden-480">Memory limit</th>
+
+						<th class="hidden-phone">Submissions</th>
+						<th class="hidden-480">Testcases</th>
+
+						<th>Actions</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					{% for problem in problems %}
+					<tr>
+						<td>
+							<a href="#">{{ problem["name"] }}</a>
+						</td>
+						<td>{{ problem['timelimit'] }} s</td>
+						<td class="hidden-480">{{ problem['memorylimit'] }} MB</td>
+						<td class="hidden-phone">{{ problem['submissions'] }}</td>
+
+						<td class="hidden-480">
+							{{ len(problem['testcases']) }}
+						</td>
+
+						<td>
+							<div class="hidden-phone visible-desktop btn-group action-buttons-div">
+								{% if user["user_class"] != "0" %}
+								<a>
+									<button class="btn btn-mini btn-info">
+										<i class="icon-edit bigger-120"></i>
+										
+									</button>
+								</a>
+								<a>
+									<button class="btn btn-mini btn-danger">
+										<i class="icon-trash bigger-120"></i>
+									</button>
+								</a>
+								{% end %}
+								<a href="#modal-testcases" role="button" class="green modal-testcases-button " data-toggle="modal" problem="{{ problem['name'] }}" style="padding:0px;">
+									<button class="btn btn-mini btn-success">
+										<i class="icon-eye-open bigger-120"></i>
+									</button>
+								</a>
+								<a>
+									{% if problem['archive'] %}
+									<button class="btn btn-mini btn-warning add_archive gritter" problem="{{ problem['name'] }}">
+										<i class="icon-book bigger-120"></i>
+									</button>
+									{% else %}
+									<button class="btn btn-mini btn-info add_archive gritter" problem="{{ problem['name'] }}">
+										<i class="icon-book bigger-120"></i>
+									</button>
+									{% end %}
+								</a>
+							</div>
+
+						</td>
+					</tr>
+					{% end %}
+				
+				</tbody>
+			</table>
+		</div><!--/span-->
+	</div><!--/row-->
+	{% else %}
+	<h3>There are no problems.</h3>
+	{% end %}
+
+	<div id="modal-form" class="modal hide" tabindex="-1" style="width:400px; left:57%;">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="blue bigger">Please fill the following form fields</h4>
+								</div>
+								<div class="alert" id="problem_add_result" style="display:none">
+									<span></span>
+								</div>
+								<form action="/problems" method="POST" id="add_problem">
+									<div class="modal-body overflow-visible">
+										<div class="row-fluid">
+											<div class="span9">
+												<div class="control-group">
+													<label class="control-label">Name</label>
+
+													<div class="controls">
+														<input type="text" name="name" placeholder="Name"/>
+													</div>
+												</div>
+
+												<div class="control-group">
+													<label class="control-label">Restrictions</label>
+
+													<div class="controls">
+														<input class="input-small" type="text" name="timelimit" placeholder="Time limit"/>
+														<input class="input-small" type="text" name="memorylimit" placeholder="Memory limit" />
+													</div>
+												</div>
+
+												<div class="control-group">
+													<label class="control-label">Testcases (optional)</label>
+													<input type="file" name="testcases" />
+												
+												</div>
+												
+												<div class="control-group">
+													<label class="control-label">Special script (optional)</label>
+													<input type="file" name="source" />
+												
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="modal-footer">
+										<button class="btn btn-small" data-dismiss="modal">
+											<i class="icon-remove"></i>
+											Cancel
+										</button>
+
+										<button class="btn btn-small btn-primary">
+											<i class="icon-ok"></i>
+											Submit
+										</button>
+									</div>	
+								</form>
+							</div>
+
+
+<div id="modal-testcases" class="modal hide fade" tabindex="-1">
+	<div class="modal-header no-padding">
+		<div class="table-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			Testcases
+		</div>
+	</div>
+
+	<div class="modal-body no-padding">
+		<div class="row-fluid">
+			<table class="table table-striped table-bordered table-hover no-margin-bottom no-border-top">
+				<thead>
+					<tr>
+						<th>Input</th>
+						<th>Output</th>
+						<th>Value</th>
+
+					</tr>
+				</thead>
+
+				<tbody id="modal-testcases-tbody">
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="modal-footer">
+		<button class="btn btn-small btn-danger pull-left" data-dismiss="modal">
+			<i class="icon-remove"></i>
+			Close
+		</button>
+
+		
+	</div>
+</div>
+
+{% end %}
+
+
+{% block script %}
+		<script src="static/js/jquery.gritter.min.js"></script>
+		<script src="static/js/spin.min.js"></script>
+
+		<!--ace scripts-->
+
+		<script src="static/js/ace-elements.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+			
+
+	$(".add_archive").click(function(){
+		problem = $(this).attr("problem")
+		var curr = $(this)
+		$.post("/archive",{problem:problem},function(data){
+			data = JSON.parse(data)
+			$.gritter.add({
+				title: 'Result',
+				text: data.message,
+				class_name: 'gritter-success'
+			});
+			if (data.status == "0"){
+				if(curr.hasClass('btn-warning'))
+					curr.removeClass('btn-warning').addClass('btn-info')
+				else
+					curr.removeClass('btn-info').addClass('btn-warning')					
+
+			}
+			
+		})
+	})
+
+	$("#add_problem").ajaxForm({
+		success: function(data){
+			data = JSON.parse(data)
+			if(data.status == "1") alert_class = "alert-danger"
+				else alert_class = "alert-success"
+			$("#problem_add_result").attr("class","alert " + alert_class).show()
+			$("#problem_add_result span").html(data.message)
+		}
+	})
+
+	$(".modal-testcases-button").click(function(){
+		$("#modal-testcases-tbody").html('')
+		window.problem = $(this).attr("problem")
+		console.log(problem)
+		$.get("/testcases",{"problem":problem},function(data){
+			data = JSON.parse(data)
+			if (data.status != "0") return;
+			data = data.data
+			var i = 0;
+			data.forEach(function(entry){
+				i++;
+				console.log(entry)
+				$("#modal-testcases-tbody").append("<tr><td>"+i+".in</td><td>"+i+".ok</td><td class='testcase_value' testcase="+i+">"+entry+"</td></tr>")
+			})
+
+		})
+
+
+		$('body').on('click', 'td.testcase_value', function() {
+    		var value = $(this).text()
+    		var testcase = $(this).attr("testcase")
+			console.log(value)
+			$(this).attr('class','')
+			$(this).html("<input type='text' value="+value+" class='testcase_value_input input-mini' testcase="+testcase+" problem="+window.problem+">")
+		});
+
+		$('body').on('blur','.testcase_value_input',function(){
+			var value = $(this).val()
+			var problem = $(this).attr("problem")
+			var testcase = $(this).attr("testcase")
+			console.log(value)
+			var parent = $(this).parent()
+			$.post("/testcases/set",{testcase:testcase,problem:problem,value:value},function(data){
+				data = JSON.parse(data)
+				if (data.status != "0"){
+					parent.html(data.message)
+				}else{
+					parent.html(value)
+				}
+					setTimeout(function(){parent.attr('class','testcase_value')},300)
+			})
+
+		})
+
+		
+	})
+
+
+				
+
+})
+</script>
+
+{% end %}
+
+{% block style %}
+<link rel="stylesheet" href="static/css/jquery.gritter.css" />
+<style>
+.action-buttons-div a{
+	margin-right:3px;
+}
+</style>
+{% end %}

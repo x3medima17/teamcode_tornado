@@ -1,0 +1,53 @@
+<style>
+td{
+    padding: 5px;
+}
+@media export {
+  .coupon-class 
+  {
+   page-break-after:always;
+  }
+ }
+</style>
+<div class="export">
+{% for user in data.keys() %}
+    {{ user }}: <b>{{ data[user]["name"] }}</b> <br>
+        {% for problem in data[user]["problems"].keys() %}
+            Problem: <b>{{ problem }}</b><br>
+            {% if data[user]["problems"][problem]["data"] %}
+                <table border="1" style="border-collapse:collapse;padding:5px;">
+                    <tbody>
+                        <th width="70px">Testcase</th>
+                        <th width="150px">Runtime</th>
+                        <th width="150px">Result</th>
+                        <th width="100px">Score</th>
+                    </tbody>
+                    {% set i = 0 %}
+                    {% for testcase in data[user]["problems"][problem]["data"] %}
+                    {% set i = i+1 %}
+                        <tr>
+                            <td>
+                                {{ i }}
+                            </td>
+                            <td>
+                                {{ testcase["runtime"] }}
+                            </td>
+                            <td>
+                                {{ testcase["message"] }}
+                            </td>
+                            <td>
+                                {{ testcase["score"] }}
+                            </td>
+                        </tr>
+                    {% end %}
+                </table>
+            {% else %}
+                No completed testcases<br>
+            {% end %}
+            <br>  
+        {% end %}
+        <b>Total:</b> {{ data[user]["score"] }}<br>
+        ________________________________________________________________________________
+    <br><br>
+{% end %}
+</div>

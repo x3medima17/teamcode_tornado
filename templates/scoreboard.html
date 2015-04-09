@@ -1,0 +1,88 @@
+{% extends 'base2.html' %}
+
+{% import datetime %}
+
+{% block content %}
+
+
+	{% if len(score)==0 %}
+	<p><h4>No data</h4></p>
+	{% else %}
+	<div class="row-fluid">
+		<div class="span12">
+			<table id="sample-table-1" class="table table-striped table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>User</th>
+						{% for problem in problems %}
+							<th>{{ problem }}</ht>
+								{% end %}
+						<th class="hidden-480">Score</th>
+
+					</tr>
+				</thead>
+
+				<tbody>
+					{% set i=0 %}
+					{% for item in score %}
+					{% set i+=1 %}
+					<tr>
+						<td>
+							{{ i }}
+						</td>
+						<td class="hidden-phone">{{ item['user'] }}</td>
+						{% for problem in problems %}
+						<td>
+							{% if problem in item['problems'] %}
+								{{ item['problems'][problem] }}
+							{% else %}
+							     No submission
+							{% end %}
+						</td>
+						{% end %}
+						<td class="hidden-480">{{ item['score'] }}</td>
+					
+
+					</tr>
+					{% end %}
+				
+				</tbody>
+			</table>
+		</div><!--/span-->
+	</div><!--/row-->
+	{% end %}
+
+{% end %}
+
+
+
+{% block script %}
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".submission_info").click(function(){
+		var id = $(this).attr("submission")
+
+		$("#modal-result-tbody").html('')
+		
+		$.get("/submission",{"id":id},function(data){
+			data = JSON.parse(data)
+			if (data.status != "0") return;
+			data = data.data
+			var i = 0;
+			data.forEach(function(entry){
+				i++;
+				console.log(entry)
+				$("#modal-result-tbody").append("<tr><td>"+i+"</td><td>"+entry['runtime']+"</td><td>"+entry['message']+"</td></tr>")
+			})
+		})
+
+		})
+
+setTimeout(function(){location.reload()},10000)
+})
+
+</script>
+
+{% end %}

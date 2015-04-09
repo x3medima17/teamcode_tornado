@@ -1,0 +1,335 @@
+{% extends 'base2.html' %}
+
+{% import datetime %}
+
+{% block content %}
+<div class="row-fluid">
+	<div class="span6">
+		<div class="widget-box">
+			<div class="widget-header">
+				<h4>Upload submissions</h4>
+
+				<span class="widget-toolbar">
+					<a href="#" data-action="collapse">
+						<i class="icon-chevron-up"></i>
+					</a>
+				</span>
+			</div>
+
+			<div class="widget-body">
+				<div class="widget-main">
+						<div class="alert" id="submission_result" style="display:none">
+							<span><span>
+							<br>
+						</div>
+					<form action="/submission" method="POST" id="submission_form">
+						<div class="control-group">
+							<label class="control-label">Contest:</label>
+							<div class="controls">
+								<select id="form-field-select-1" name="contest">
+									{% for contest in contests %}
+										<option value="{{ contest['name'] }}">{{ contest['name'] }}</option>
+									{% end %}
+								</select>
+							</div>
+							<div class="controls">
+								<label class="controls-label">Source file</label>
+								<input type="file" name="source" id="source" />
+							</div>
+						</div>
+						<button class="btn btn-success btn-block">Upload</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="span6">
+		<div class="widget-box">
+			<div class="widget-header">
+				<h4>Submissions result</h4>
+
+				<span class="widget-toolbar">
+					<a href="#" data-action="collapse">
+						<i class="icon-chevron-up"></i>
+					</a>
+				</span>
+			</div>
+
+			<div class="widget-body">
+				<div class="widget-main no-padding">
+					<div class="slim-scroll" data-height="206">
+						<div class="content">
+							{% if len(submissions) != 0 %}
+							<table class="table table-striped table-bordered table-hover">
+								<thead>
+									<tr>
+										<th>
+											#
+										</th>
+										<th width="130px">
+											Time
+										</th>
+										<th>
+											Problem
+										</th>
+										<th>
+											Language
+										</th>
+										<th>
+											Status
+										</th>
+									</tr>
+								</thead>
+
+								<tbody id="submissions_tbody">
+									{% for submission  in submissions %}
+									<tr>
+										<td>
+											<a href="#modal-result" data-toggle="modal" class="submission_info" >{{ int(submission['id']) }}</a></td>
+										<td>
+											{{ datetime.datetime.fromtimestamp(int(submission['time'])).strftime('%d-%m-%Y %H:%M:%S') }}
+										</td>
+										<td>
+											{{ submission['problem'] }}
+										</td>
+										<td>
+											{{ submission['lang'] }}
+										</td>
+										<td>
+											{% if submission['status'] == 'pending' %}
+												<span class="label label-warning">Pending</span>
+											{% elif submission['status'] == 'evaluating' %}
+												<span class="label label-important">Evaluating</span>
+											{% else %}
+												<span class="label label-success">Done</span>
+											{% end %}
+										</td>
+									</tr>
+									{% end %}
+								</tbody>
+							</table>
+							{% else %}
+							<p style="margin-left:10px;"><h4 style="margin-left:10px;">There are no submissions</h4></p>
+							{% end %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<div class="row-fluid">
+	<div class="span6">
+		<div class="widget-box">
+			<div class="widget-header">
+				<h4>Clarifications</h4>
+
+				<span class="widget-toolbar">
+					<a href="#" data-action="collapse">
+						<i class="icon-chevron-up"></i>
+					</a>
+				</span>
+			</div>
+
+			<div class="widget-body">
+				<div class="widget-main">
+					<div class="alert" id="submission_result" style="display:none">
+						<span><span>
+						<br>
+					</div>
+					<div class="control-group">
+						<select id="active_contests" name="contest">
+							{% for contest in contests %}
+								<option value="{{ contest['name'] }}">{{ contest['name'] }}</option>
+							{% end %}
+						</select>
+					</div>
+					<div id="clarifications">
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="modal-result" class="modal hide fade" tabindex="-1">
+	<div class="modal-header no-padding">
+		<div class="table-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			Submission result
+		</div>
+	</div>
+
+	<div class="modal-body no-padding">
+		<div class="row-fluid">
+			<table class="table table-striped table-bordered table-hover no-margin-bottom no-border-top">
+				<thead>
+					<tr>
+						<th>Test</th>
+						<th>Runtime</th>
+						<th>Result</th>
+
+					</tr>
+				</thead>
+
+				<tbody id="modal-result-tbody">
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="modal-footer">
+		<button class="btn btn-small btn-danger pull-left" data-dismiss="modal">
+			<i class="icon-remove"></i>
+			Close
+		</button>
+
+		
+	</div>
+</div>
+{% end %}
+
+
+{% block script %}
+<script type="text/javascript">
+	$(document).ready(function(){
+		get_clarifications()
+
+		$("#active_contests").change(function(){
+			get_clarifications()
+		})
+		$(".submission_info").click(function(){
+		var id = $(this).text()
+
+		$("#modal-result-tbody").html('')
+		
+		$.get("/submission",{"id":id,"type":"result"},function(data){
+			data = JSON.parse(data)
+			if (data.status != "0") return;
+
+			data = data.data
+			var i = 0;
+			data.forEach(function(entry){
+				i++;
+				$("#modal-result-tbody").append("<tr><td>"+i+"</td><td>"+entry['runtime']+"</td><td>"+entry['message']+"</td></tr>")
+			})
+		})
+
+		})
+
+		$("#submission_form").ajaxForm({
+			success: function(data){
+						data = JSON.parse(data)
+						if(data.status != "0") alert_class = "alert-danger"
+							else alert_class = "alert-success"
+						$("#submission_result").attr("class","alert " + alert_class).show()
+						$("#submission_result span").html(data.message)
+					}
+		})
+
+		$('#source').ace_file_input({
+		no_file:'No File ...',
+		btn_choose:'Choose',
+		btn_change:'Change',
+		droppable:false,
+		onchange:null,
+		thumbnail:false //| true | large
+		//whitelist:'gif|png|jpg|jpeg'
+		//blacklist:'exe|php'
+		//onchange:''
+		//
+	});
+		setInterval(function(){
+
+			$.get("/submission",{},function(data){
+				if(!data) return;
+				data = JSON.parse(data)
+
+				$("#submissions_tbody").html("")
+				var table = $("#submissions_tbody")
+				data.forEach(function(item){
+					var time = Math.floor(item['time'])
+					var date = new Date(time*1000)
+					date = formatDate(date)  
+					if (item['status'] == "pending")
+						span = "<span class='label label-warning'>Pending</span>"
+					else if(item['status'] == "evaluating")
+						span = "<span class='label label-important'>Evaluating</span>"
+					else
+						span = "<span class='label label-success'>Done</span>"
+					table.append("<tr>")
+					table.append("<td><a href='#' class='submission_info'>"+item['id']+"</a></td>")
+					table.append("<td>\
+									 "+date.toString('yyyy-MM-dd hh:mm:ss')+" \
+								</td>\
+								<td>\
+									"+item['problem']+"\
+								</td>\
+								<td>\
+									"+item['lang']+"\
+								</td>\
+								<td>\
+									"+span+"\
+								</td>\
+							</tr>")
+				})
+			})
+		},30000)
+
+		$('.slim-scroll').each(function () {
+					var $this = $(this);
+					$this.slimScroll({
+						height: $this.data('height') || 100,
+						railVisible:true
+					});
+				});
+
+		function get_clarifications(){
+			$.ajax({
+    			type: "PUT",
+    			url: "/clarifications",
+			}).done(function(data){
+					data = JSON.parse(data)
+					var clarifications = data
+					console.log(data)
+					var contest = $("#active_contests option:selected").text()
+					//console.log(clarifications)
+					var text = "<ul style='font-size:14px;font-weight:bold;margin-bottom:5px'>"
+					console.log("start")
+					for (i=0;i<clarifications.length;++i){
+						if (clarifications[i]["contest"] ==  contest){
+							text += "<li>"+clarifications[i]["text"]+"</li>"
+						}
+						console.log(i)
+					}
+					text += "</ul>"
+					$("#clarifications").html(text)
+					console.log("finish")
+			})
+			
+		
+		}
+			
+
+	})
+
+function formatDate(d){
+
+  if(typeof d === 'number') d = new Date(d);
+  if(!(d instanceof Date)) return d;
+  function pad(n){return n<10 ? '0'+n : n}
+  return  pad(d.getDate())+'-'
+   		+ pad(d.getMonth()+1)+'-'
+        + d.getFullYear()+" "
+        + pad(d.getHours()-2) + ":"
+        + pad(d.getMinutes()) + ":"
+        + pad(d.getSeconds());
+}
+</script>
+{% end %}

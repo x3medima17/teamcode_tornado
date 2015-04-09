@@ -1,0 +1,575 @@
+Name: Plamadeala Dumitru,  contest: Colegii Mici,  problem: ppal,  score: 50
+Example result:
+status: 0,  runtime: 0.018,  message: Correct,  score: 0
+status: 0,  runtime: 0.017,  message: Correct,  score: 0
+status: 0,  runtime: 0.018,  message: Correct,  score: 0
+Testcases result:
+status: 0,  runtime: 0.018,  message: Correct,  score: 0
+status: 0,  runtime: 0.017,  message: Correct,  score: 0
+status: 0,  runtime: 0.018,  message: Correct,  score: 0
+status: 0,  runtime: 0.019,  message: Correct,  score: 10
+status: 0,  runtime: 0.014,  message: Correct,  score: 10
+status: 0,  runtime: 0.017,  message: Correct,  score: 10
+status: 0,  runtime: 0.021,  message: Correct,  score: 10
+status: 5,  runtime: 0.016,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.019,  message: Wrong answer,  score: 0
+status: 0,  runtime: 0.014,  message: Correct,  score: 10
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+
+
+Name: Ciobanu Alina,  contest: Colegii Mari,  problem: panou,  score: 5
+Example result:
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+Testcases result:
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.016,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.016,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 0,  runtime: 0.014,  message: Correct,  score: 5
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+
+
+Name: Sula Valentin,  contest: Colegii Mari,  problem: interpal,  score: 0
+Example result:
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+Testcases result:
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.015,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.015,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.03,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.015,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.015,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.015,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+
+
+Name: Lupu Cristian,  contest: Colegii Mici,  problem: ppal,  score: 0
+Example result:
+status: 3,  runtime: 2.205,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.242,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.358,  message: Timelimit exceeded,  score: 0
+Testcases result:
+status: 3,  runtime: 2.205,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.242,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.358,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.123,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.017,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.014,  message: Timelimit exceeded,  score: 0
+
+
+Name: Scripnic Ion,  contest: Colegii Mici,  problem: mprim,  score: 0
+Example result:
+status: 4,  runtime: 0.015,  message: No output file,  score: 0
+Testcases result:
+status: 4,  runtime: 0.015,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.017,  message: No output file,  score: 0
+status: 4,  runtime: 0.036,  message: No output file,  score: 0
+status: 4,  runtime: 0.028,  message: No output file,  score: 0
+
+
+Name: Savin Vadim,  contest: Colegii Mari,  problem: interpal,  score: 0
+Example result:
+status: 1,  runtime: 0.0,  message: Compile error,  score: 0
+
+Name: Chetrari Stanislav,  contest: Colegii Mari,  problem: interpal,  score: 0
+Example result:
+status: 1,  runtime: 0.0,  message: Compile error,  score: 0
+
+Name: Bourosu Anton,  contest: Colegii Mari,  problem: panou,  score: 0
+Example result:
+status: 1,  runtime: 0.0,  message: Compile error,  score: 0
+
+Name: Rotaru Pavel,  contest: Colegii Mici,  problem: ppal,  score: 0
+Example result:
+status: 1,  runtime: 0.0,  message: Compile error,  score: 0
+
+Name: Sardari Victor,  contest: Colegii Mici,  problem: ppal,  score: 0
+Example result:
+status: 1,  runtime: 0.0,  message: Compile error,  score: 0
+
+Name: Telinschi Artiom,  contest: Colegii Mici,  problem: gard,  score: 0
+Example result:
+status: 3,  runtime: 2.123,  message: Timelimit exceeded,  score: 0
+Testcases result:
+status: 3,  runtime: 2.123,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.122,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.122,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.194,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.243,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.018,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.015,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.025,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.015,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 2.015,  message: Timelimit exceeded,  score: 0
+
+
+Name: Iftodi Eugenia,  contest: Colegii Mici,  problem: mprim,  score: 0
+Example result:
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+Testcases result:
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.018,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+
+
+Name: Begun Victoria,  contest: Colegii Mari,  problem: interpal,  score: 0
+Example result:
+status: 5,  runtime: 0.016,  message: Wrong answer,  score: 0
+status: 0,  runtime: 0.015,  message: Correct,  score: 0
+Testcases result:
+status: 5,  runtime: 0.016,  message: Wrong answer,  score: 0
+status: 0,  runtime: 0.015,  message: Correct,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.373,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.016,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.045,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.048,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.016,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.017,  message: Wrong answer,  score: 0
+
+
+Name: iftodi,  contest: Colegii Mici,  problem: gard,  score: 0
+Example result:
+status: 4,  runtime: 0.023,  message: No output file,  score: 0
+Testcases result:
+status: 4,  runtime: 0.023,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+
+
+Name: Gurduza Vasile,  contest: Colegii Mari,  problem: design,  score: 0
+Example result:
+status: 5,  runtime: 0.123,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.239,  message: Wrong answer,  score: 0
+Testcases result:
+status: 5,  runtime: 0.123,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.239,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.123,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.123,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.122,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.122,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.239,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.231,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.232,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.122,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.236,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.017,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+
+
+Name: Svet Valentin,  contest: Colegii Mari,  problem: interpal,  score: 0
+Example result:
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.015,  message: Timelimit exceeded,  score: 0
+Testcases result:
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.015,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.015,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.026,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+
+
+Name: Sulghin Valeriu,  contest: Colegii Mari,  problem: design,  score: 0
+Example result:
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+Testcases result:
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.039,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.06,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.061,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.064,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.067,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.061,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.065,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.064,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.076,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.078,  message: Wrong answer,  score: 0
+
+
+Name: Lupasco Irina,  contest: Colegii Mari,  problem: interpal,  score: 0
+Example result:
+status: 1,  runtime: 0.0,  message: Compile error,  score: 0
+
+Name: Hincu Petru,  contest: Colegii Mari,  problem: interpal,  score: 0
+Example result:
+status: 1,  runtime: 0.0,  message: Compile error,  score: 0
+
+Name: Breahna David,  contest: Colegii Mari,  problem: interpal,  score: 0
+Example result:
+status: 4,  runtime: 0.243,  message: No output file,  score: 0
+status: 4,  runtime: 0.242,  message: No output file,  score: 0
+Testcases result:
+status: 4,  runtime: 0.243,  message: No output file,  score: 0
+status: 4,  runtime: 0.242,  message: No output file,  score: 0
+status: 4,  runtime: 0.242,  message: No output file,  score: 0
+status: 4,  runtime: 0.473,  message: No output file,  score: 0
+status: 4,  runtime: 0.242,  message: No output file,  score: 0
+status: 4,  runtime: 0.123,  message: No output file,  score: 0
+status: 4,  runtime: 0.23,  message: No output file,  score: 0
+status: 4,  runtime: 0.121,  message: No output file,  score: 0
+status: 4,  runtime: 0.232,  message: No output file,  score: 0
+status: 4,  runtime: 0.121,  message: No output file,  score: 0
+status: 4,  runtime: 0.121,  message: No output file,  score: 0
+status: 4,  runtime: 0.122,  message: No output file,  score: 0
+status: 4,  runtime: 0.122,  message: No output file,  score: 0
+status: 4,  runtime: 0.123,  message: No output file,  score: 0
+status: 4,  runtime: 0.121,  message: No output file,  score: 0
+status: 4,  runtime: 0.241,  message: No output file,  score: 0
+status: 4,  runtime: 0.125,  message: No output file,  score: 0
+status: 4,  runtime: 0.238,  message: No output file,  score: 0
+status: 4,  runtime: 0.241,  message: No output file,  score: 0
+status: 4,  runtime: 0.231,  message: No output file,  score: 0
+status: 4,  runtime: 0.231,  message: No output file,  score: 0
+status: 4,  runtime: 0.123,  message: No output file,  score: 0
+
+
+Name: icoseanic,  contest: Colegii Mici,  problem: ppal,  score: 0
+Example result:
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+Testcases result:
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+
+
+Name: Bereziuc Tatiana,  contest: Colegii Mici,  problem: nova,  score: 0
+Example result:
+status: 1,  runtime: 0.0,  message: Compile error,  score: 0
+
+Name: Dumitru Savva,  contest: Colegii Mari,  problem: interpal,  score: 0
+Example result:
+status: 4,  runtime: 0.019,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+Testcases result:
+status: 4,  runtime: 0.019,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.025,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.016,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+status: 4,  runtime: 0.013,  message: No output file,  score: 0
+
+
+Name: Cojocaru Nicolae,  contest: Colegii Mari,  problem: pod,  score: 0
+Example result:
+status: 1,  runtime: 0.0,  message: Compile error,  score: 0
+
+Name: Amarfii Sergiu,  contest: Colegii Mari,  problem: panou,  score: 0
+Example result:
+status: 1,  runtime: 0.0,  message: Compile error,  score: 0
+
+Name: Gori Radu,  contest: Colegii Mari,  problem: interpal,  score: 0
+Example result:
+status: 1,  runtime: 0.0,  message: Compile error,  score: 0
+
+Name: Golban Cristian,  contest: Colegii Mari,  problem: interpal,  score: 0
+Example result:
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+Testcases result:
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.087,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.202,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.122,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.124,  message: Timelimit exceeded,  score: 0
+
+
+Name: Procop Victor,  contest: Colegii Mici,  problem: ppal,  score: 0
+Example result:
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.015,  message: No output file,  score: 0
+status: 4,  runtime: 0.015,  message: No output file,  score: 0
+Testcases result:
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.015,  message: No output file,  score: 0
+status: 4,  runtime: 0.015,  message: No output file,  score: 0
+status: 4,  runtime: 0.02,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.018,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+status: 4,  runtime: 0.014,  message: No output file,  score: 0
+
+
+Name: Masurceac Serghei,  contest: Colegii Mici,  problem: nova,  score: 60
+Example result:
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 0,  runtime: 0.014,  message: Correct,  score: 0
+Testcases result:
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 0,  runtime: 0.014,  message: Correct,  score: 0
+status: 0,  runtime: 0.014,  message: Correct,  score: 5
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 0,  runtime: 0.014,  message: Correct,  score: 5
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 0,  runtime: 0.014,  message: Correct,  score: 5
+status: 0,  runtime: 0.014,  message: Correct,  score: 5
+status: 0,  runtime: 0.014,  message: Correct,  score: 5
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 0,  runtime: 0.014,  message: Correct,  score: 5
+status: 0,  runtime: 0.014,  message: Correct,  score: 5
+status: 0,  runtime: 0.014,  message: Correct,  score: 5
+status: 0,  runtime: 0.016,  message: Correct,  score: 5
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 0,  runtime: 0.014,  message: Correct,  score: 5
+status: 0,  runtime: 0.016,  message: Correct,  score: 5
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 0,  runtime: 0.028,  message: Correct,  score: 5
+
+
+Name: Cuciurca Cons-tin,  contest: Colegii Mici,  problem: nova,  score: 0
+Example result:
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+Testcases result:
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.016,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+
+
+Name: Lupu Robert,  contest: Colegii Mici,  problem: nova,  score: 0
+Example result:
+status: 1,  runtime: 0.0,  message: Compile error,  score: 0
+
+Name: Proca Radu,  contest: Colegii Mari,  problem: design,  score: 0
+Example result:
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+Testcases result:
+status: 5,  runtime: 0.015,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 5,  runtime: 0.014,  message: Wrong answer,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 5,  runtime: 0.06,  message: Wrong answer,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.017,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.314,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.129,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.112,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.246,  message: Timelimit exceeded,  score: 0
+status: 5,  runtime: 0.836,  message: Wrong answer,  score: 0
+status: 5,  runtime: 1.233,  message: Wrong answer,  score: 0
+
+
+Name: Artene Victoria,  contest: Colegii Mari,  problem: pod,  score: 0
+Example result:
+status: 3,  runtime: 3.015,  message: Timelimit exceeded,  score: 0
+Testcases result:
+status: 3,  runtime: 3.015,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.015,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.016,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.016,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.015,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.016,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.014,  message: Timelimit exceeded,  score: 0
+status: 3,  runtime: 3.013,  message: Timelimit exceeded,  score: 0
+
+

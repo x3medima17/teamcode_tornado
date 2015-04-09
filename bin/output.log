@@ -1,0 +1,69 @@
+nohup: ignoring input
+Evaluating sumbission: 536, problem: ab, user: dimasavva17@gmail.com
+Runtime: 0.0134551525116s
+Testcase: 1
+Out: 824313
+Ok: 824313
+
+
+Runtime: 0.0135409832001s
+Testcase: 2
+Out: 923176
+Ok: 923176
+
+
+Runtime: 0.0132081508636s
+Testcase: 3
+Out: 1896820
+Ok: 1896820
+
+
+Runtime: 0.0134019851685s
+Testcase: 4
+Out: 699730
+Ok: 699730
+
+
+Runtime: 0.0146989822388s
+Testcase: 5
+Out: 658141
+Ok: 658141
+
+
+Runtime: 0.0121808052063s
+Testcase: 6
+Out: 921860
+Ok: 921860
+
+
+Runtime: 0.012228012085s
+Testcase: 7
+Out: 1027074
+Ok: 1027074
+
+
+Runtime: 0.0139150619507s
+Testcase: 8
+Out: 1399799
+Ok: 1399799
+
+
+Runtime: 0.0125811100006s
+Testcase: 9
+Out: 1678932
+Ok: 1678932
+
+
+Runtime: 0.0136470794678s
+Testcase: 10
+Out: 1090499
+Ok: 1090499
+
+
+[{'status': '0', 'message': 'Correct', 'runtime': 0.01345515251159668, 'score': 0}, {'status': '0', 'message': 'Correct', 'runtime': 0.013540983200073242, 'score': 0}, {'status': '0', 'message': 'Correct', 'runtime': 0.013208150863647461, 'score': 0}, {'status': '0', 'message': 'Correct', 'runtime': 0.013401985168457031, 'score': 0}, {'status': '0', 'message': 'Correct', 'runtime': 0.014698982238769531, 'score': 0}, {'status': '0', 'message': 'Correct', 'runtime': 0.012180805206298828, 'score': 0}, {'status': '0', 'message': 'Correct', 'runtime': 0.012228012084960938, 'score': 0}, {'status': '0', 'message': 'Correct', 'runtime': 0.013915061950683594, 'score': 0}, {'status': '0', 'message': 'Correct', 'runtime': 0.012581110000610352, 'score': 0}, {'status': '0', 'message': 'Correct', 'runtime': 0.013647079467773438, 'score': 0}]
+Traceback (most recent call last):
+  File "system.py", line 192, in <module>
+    evaluator()
+  File "system.py", line 49, in evaluator
+    time.sleep(3)
+KeyboardInterrupt
